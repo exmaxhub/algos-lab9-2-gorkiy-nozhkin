@@ -18,6 +18,12 @@ def on_button_click(value):
         print(value)
 ```
 
+#### Привязка функции к кнопке
+
+```
+tk.Button(... text=value, command=lambda v=value: on_button_click(v) ...)
+```
+
 _Функция принимает значение value, что по сути - надпись на кнопке_
 
 #### Изменение поля ввода
